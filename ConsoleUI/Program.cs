@@ -14,25 +14,15 @@ namespace ConsoleUI
 
             //CarManagerTest();
 
-            RentalManager rentalManager = new RentalManager(new EfRentalDal());
-            rentalManager.Add(new Rental { CustomerId = 1, CarId = 1, RentDate = DateTime.Now });
-            rentalManager.Add(new Rental { CustomerId = 1, CarId = 1, RentDate = DateTime.Now });
-            rentalManager.Add(new Rental { CustomerId = 2, CarId = 1, RentDate = DateTime.Now });
-
-            foreach (var rental in rentalManager.GetRentalDetailsDto(1).Data)
-            {
-                Console.WriteLine("Araba adı = " + rental.CarName + ",   Müşteri adı = " + rental.CustomerName +
-                    ",  Arabayı kiraladığı gün = " + rental.RentDate + ",  Kullanıcı adı = " + rental.UserName);
-            }
 
 
-
+           
 
 
         }
 
 
-       
+
 
 
 
