@@ -18,7 +18,8 @@ namespace Business.Constants
         public static string CarUpdate = "Araba Güncellendi";
         public static string CarDeleted = "Araba Silindi";
         public static string CarsListed = "Arabalar Listelendi";
-
+        public static string CarNotFound = "Araç bulunamadı";
+        public static string CarExists= "Araç zaten veritabanında var.";
         public static string ColorAdded = "Renk Eklendi";
         public static string ColorUpdated = "Renk Güncellendi";
         public static string ColorDeleted = "Renk Silindi";
@@ -42,7 +43,14 @@ namespace Business.Constants
         public static string RentalUpdatedReturnDate = "Araç Teslim Alındı.";
         public static string RentalUpdatedReturnDateError = "Araç Zaten Teslim Alınmış.";
 
-
-
+        public static string CarImageAdded = "Araç görseli eklendi";
+        public static string CarImageUpdated = "Araç görseli güncellendi";
+        public static string CarImageDeleted = "Araç görseli silindi";
+        public static string CarImageNotFound = "Görsel bulunamadı";
+        public static string CarImageExists = "Görsel kaydı veritabanında var";
+        public static string MaxCarImageCountLimit = "Bir aracın en fazla 5 görseli olabilir";
+        public static string CarImageListed = "Görsel(ler) listelendi";
+        public static string RentalExists = "Kiralama kaydı veritabanında var";
+        
     }
 }

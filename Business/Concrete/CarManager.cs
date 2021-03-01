@@ -70,5 +70,15 @@ namespace Business.Concrete
             _carDal.Update(car);
            return new SuccessResult(Messages.CarUpdate);
         }
+
+        public IResult IsExist(int carId)
+        {
+            var carExist = GetById(carId);
+            if (carExist.Data != null)
+            {
+                return new SuccessResult(Messages.CarExists);
+            }
+            return new ErrorResult(Messages.CarNotFound);
+        }
     }
 }
